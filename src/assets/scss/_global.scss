@@ -1,0 +1,45 @@
+// ******
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// container
+.container {
+    max-width: 1270px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+// button
+button {
+    cursor: pointer;
+}
+
+// li
+li {
+    list-style: none;
+}
+
+// a 
+a {
+    color: rgb(204, 204, 204);
+}
+
+// active
+.active {
+    * {
+        background: rgb(244, 204, 70);
+        width: 30px;
+        height: 30px;
+        border-radius: 360px;
+        color: rgb(255, 255, 255);
+    }
+}
+
+// body
+body {
+    background-color: #e1e0e6;
+}
