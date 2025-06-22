@@ -1,1 +1,33 @@
-// Пишите с новой ветки
+.error {
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+    .eror_modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background:$white;
+        width: 627px;
+        height: 263px;
+        border-radius: 24px;
+        background: $white;
+        padding: 36px 207px 36px 207px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            padding-top: 22px;
+            color:$text-9;
+            font-family:$font-nunito;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 100%;
+        }
+
+    }
+}
