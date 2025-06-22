@@ -1,1 +1,248 @@
-// Пишите с новой ветки
+.hero {
+
+    &_statistics {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &_orders {
+        padding-top: 26px;
+        display: flex;
+        align-items: start;
+        gap: 40px;
+
+        &_title {
+            padding-bottom: 16px;
+            color: $text-9;
+            font-family: $font-nunito;
+            font-size: 28px;
+            font-weight: 400;
+        }
+    }
+}
+
+.statistic {
+    &_card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 22px;
+        width: 288.35px;
+        height: 147px;
+        border-radius: 16px;
+        border: none;
+        background: rgb(255, 255, 255);
+    }
+
+    &_icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 56.47px;
+        height: 56.47px;
+        border-radius: 50%;
+    }
+
+    &_green {
+        background: rgb(216, 255, 225);
+    }
+
+    &_blue {
+        background: rgb(217, 248, 255);
+    }
+
+    &_red {
+        background: rgb(255, 217, 217);
+    }
+
+    &_info_wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 7.50px;
+    }
+
+    &_text {
+        color: $text-9;
+        font-family: $font-nunito;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    &_num {
+        color: $text-9;
+        font-family: $font-monserrat;
+        font-size: 28px;
+        font-weight: 700;
+    }
+}
+
+.allorders {
+    &_card {
+        width: 308px;
+        padding: 26px;
+        border-radius: 16px;
+        border: none;
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+    }
+
+    &_waiter_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &_waiters {
+        color: $text-9;
+        font-family: $font-nunito;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    &_time {
+        padding: 9px 13px;
+        font-family: $font-monserrat;
+        font-size: 11px;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+
+    &_yellow {
+        color: $primary-5;
+        background: $primary-3;
+    }
+
+    &_red {
+        background: rgb(252, 233, 233);
+        color: rgb(225, 89, 89);
+    }
+
+    &_green {
+        background: rgb(234, 255, 238);
+        color: rgb(56, 168, 75);
+    }
+
+    &_table_wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &_table {
+        color: $text-9;
+        font-family: $font-nunito;
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    &_date {
+        color: rgb(113, 142, 191);
+        font-family: $font-nunito;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    &_orders_wrap {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        border: none;
+        padding: 8px;
+        background: rgb(239, 239, 239);
+        gap: 8px;
+    }
+
+    &_orders {
+        color: $text-9;
+        font-family: $font-nunito;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+
+.daydish {
+    &_card {
+        width: 325px;
+        padding: 16px;
+        border-radius: 16px;
+        border: none;
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &_bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &_name_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+
+    &_name {
+        color: $text-9;
+        font-family: $font-nunito;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 1%;
+    }
+
+    &_stock {
+        padding: 8px 16px;
+        width: 102px;
+        border-radius: 5px;
+    }
+
+    &_yellow {
+        color: $primary-5;
+        background: $primary-3;
+    }
+
+    &_red {
+        background: rgb(252, 233, 233);
+        color: rgb(225, 89, 89);
+    }
+
+    &_green {
+        background: rgb(234, 255, 238);
+        color: rgb(56, 168, 75);
+    }
+
+    &_subtitle {
+        padding-top: 7px;
+        color: $text-4;
+        font-family: $font-nunito;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    &_price {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        color: $text-9;
+        font-family: $font-nunito;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    &_update {
+        padding: 17px 95px;
+        border-radius: 50px;
+        border: none;
+        outline: none;
+        background: $text-9;
+        color: $white;
+        font-family: $font-nunito;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}

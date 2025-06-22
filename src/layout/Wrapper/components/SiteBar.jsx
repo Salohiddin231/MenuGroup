@@ -29,7 +29,6 @@ export default function Sitebar() {
                         </span>
                     </NavLink>
                 </li>
-
                 <li className="sitebar_pages">
                     <NavLink to="/stuff">
                         <span className="sitebar_icon_bg">
