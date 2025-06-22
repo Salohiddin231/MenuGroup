@@ -1,4 +1,6 @@
 import { CiSearch } from "react-icons/ci";
+import { MdKeyboardVoice } from "react-icons/md";
+
 
 export default function Header({ text }) {
     return (
@@ -15,7 +17,7 @@ export default function Header({ text }) {
                                 className="search_input"
                                 placeholder="Поиск"
                             />
-                            <button className="mic_btn">🎤</button>
+                            <button className="mic_btn"><MdKeyboardVoice /></button>
                         </div>
 
                         <select className="header_select">
