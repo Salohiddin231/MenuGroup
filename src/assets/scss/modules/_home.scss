@@ -1,3 +1,21 @@
+.home {
+    display: flex;
+    transition: margin-left 0.3s ease;
+
+    &.sidebar-open {
+        .routes {
+            margin-left: 96px;
+            transition: margin-left 0.3s ease;
+        }
+    }
+
+    .routes {
+        width: 100%;
+        margin-left: 11px;
+        transition: margin-left 0.3s ease;
+    }
+}
+
 .hero {
 
     &_statistics {
