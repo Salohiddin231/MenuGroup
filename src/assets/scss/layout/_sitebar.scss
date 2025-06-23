@@ -52,6 +52,16 @@
         justify-content: center;
         transition: all 0.3s ease;
 
+
+        &:hover {
+            background: #f4cc46;
+            border-radius: 360px;
+
+            * {
+                color: #fff;
+            }
+        }
+
         .sitebar_icon_bg {
             display: flex;
             align-items: center;
@@ -95,14 +105,9 @@
         font-family: $font-monserrat;
         font-size: 16px;
         font-weight: 700;
-        cursor: pointer;
         display: none;
         opacity: 0;
         transition: opacity 0.3s ease;
-
-        * {
-            cursor: pointer;
-        }
     }
 
     &.open .sitebar_logo_wrap {
@@ -112,19 +117,51 @@
         opacity: 1;
     }
 
-    .sitebar_pages1 {
-        cursor: pointer;
-    }
-
     &.open .sitebar_pages {
         display: flex;
         align-items: center;
         justify-content: flex-start;
+
+
+        &:hover {
+            width: 272px;
+            background: #f4cc46;
+            border-radius: 360px;
+
+            * {
+                color: #fff;
+            }
+        }
     }
 
-    &_logo {
-        padding-bottom: 9px;
-        width: 35.12px;
-        height: 36px;
+
+    &_position {
+        position: absolute;
+        bottom: 50px;
+        left: 47px;
+
+        &:hover {
+            background: #f4cc46;
+            border-radius: 360px;
+
+            * {
+                color: #fff;
+            }
+        }
+
     }
+
+    &.open &_position {
+        background: rgb(244, 204, 70);
+        width: 272px;
+        border-radius: 360px;
+        position: absolute;
+        bottom: 50px;
+        left: 15px;
+
+        * {
+            color: #fff;
+        }
+    }
+
 }
