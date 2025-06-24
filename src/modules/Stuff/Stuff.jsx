@@ -1,9 +1,10 @@
+import StuffUpdate from '../../assets/svg/StuffUpdate.svg'
 import React, { useState } from "react";
 import AddStuffImg from '../../assets/svg/AddStuff.svg'
+import StuffTable from './StuffItem/StuffTable'
 import Header from '../../components/Header/Header'
 
 function StuffModal({ onClose }) {
-  // Функция для закрытия только при клике по overlay
   const handleOverlayClick = (e) => {
     if (e.target.classList.contains('modal_overlay')) {
       onClose();
@@ -53,27 +54,52 @@ function StuffModal({ onClose }) {
             </div>
           </div>
           <div className="modal_btn_wrapper">
-            <button className="modal_btn1">Сохранить</button>
-            <button className="modal_btn2">Удалить товар</button>
+            <button className="modal_btn1">Добавить</button>
           </div>
         </div>
       </div>
     </>
   );
 }
-
 export default function Stuff() {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <>
-      <Header text={'Товары'}/>      
+      <Header text={'Товары'} />
       <section className="stuff">
         <div className="container">
-          <div className="stuff_head">
-            <button className="stuff_btn" onClick={() => setShowModal(true)}>
-              + Добавить товар
-            </button>
+          <div className="stuff_wrapper">
+            <div className="stuff_head">
+              <button className="stuff_btn" onClick={() => setShowModal(true)}>
+                + Добавить товар
+              </button>
+            </div>
+            <div className="stuff_table">
+              <table className="stuff_table_item">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Название</th>
+                    <th>Статус</th>
+                    <th>Цена</th>
+                    <th>Изменить</th>
+                  </tr>
+                </thead>
+                <StuffTable classes={"status available"} num={"#1"} names={"Филе-Миньон"} slock={"В наличии"} price={"1500с"} fotoupdate={StuffUpdate} />
+                <StuffTable classes={"status absent"} num={"#1"} names={"Филе-Миньон"} slock={"Не наличии"} price={"1500с"} fotoupdate={StuffUpdate} />
+                <StuffTable classes={"status available"} num={"#1"} names={"Филе-Миньон"} slock={"В наличии"} price={"1500с"} fotoupdate={StuffUpdate} />
+                <StuffTable classes={"status available"} num={"#1"} names={"Филе-Миньон"} slock={"В наличии"} price={"1500с"} fotoupdate={StuffUpdate} />
+                <StuffTable classes={"status available"} num={"#1"} names={"Филе-Миньон"} slock={"В наличии"} price={"1500с"} fotoupdate={StuffUpdate} />
+                <StuffTable classes={"status available"} num={"#1"} names={"Филе-Миньон"} slock={"В наличии"} price={"1500с"} fotoupdate={StuffUpdate} />
+                <StuffTable classes={"status available"} num={"#1"} names={"Филе-Миньон"} slock={"В наличии"} price={"1500с"} fotoupdate={StuffUpdate} />
+                <StuffTable classes={"status available"} num={"#1"} names={"Филе-Миньон"} slock={"В наличии"} price={"1500с"} fotoupdate={StuffUpdate} />
+                <StuffTable classes={"status available"} num={"#1"} names={"Филе-Миньон"} slock={"В наличии"} price={"1500с"} fotoupdate={StuffUpdate} />
+                <StuffTable classes={"status available"} num={"#1"} names={"Филе-Миньон"} slock={"В наличии"} price={"1500с"} fotoupdate={StuffUpdate} />
+                <StuffTable classes={"status available"} num={"#1"} names={"Филе-Миньон"} slock={"В наличии"} price={"1500с"} fotoupdate={StuffUpdate} />
+                <StuffTable classes={"status available"} num={"#1"} names={"Филе-Миньон"} slock={"В наличии"} price={"1500с"} fotoupdate={StuffUpdate} />
+              </table>
+            </div>
           </div>
         </div>
       </section>

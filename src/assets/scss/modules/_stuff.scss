@@ -1,170 +1,245 @@
 .stuff {
 
-    .stuff_head {
-        display: flex;
-        justify-content: end;
+    .stuff_wrapper {
 
-        .stuff_btn {
-            box-sizing: border-box;
-            border: 1px solid rgb(0, 0, 0);
-            border-radius: 50px;
-            width: 184px;
-            height: 48px;
-            color: $text-9;
-            font-family: $font-nunito;
-            font-size: 14px;
-            font-weight: 700;
-            line-height: 100%;
-        }
-    }
-}
-
-.modal_overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.modal_content {
-    background: #fff;
-    border-radius: 16px;
-    padding: 26px;
-    width: 869px;
-    height: 723px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    .modal_wrapper {
-        display: flex;
-        gap: 39px;
-        justify-content: space-between;
-
-        .modal_wrap1 {
+        .stuff_head {
             display: flex;
-            flex-direction: column;
-            gap: 26px;
+            justify-content: flex-end;
+            margin-bottom: 20px;
 
-            .modal_bg {
-                border-radius: 10px;
-                box-shadow: 0px 0px 8px 3px rgba(149, 153, 171, 0.16);
-                background: rgb(230, 230, 230);
-                width: 386px;
-                height: 258px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                img {
-                    background-size: contain;
-                }
-            }
-
-            .modal_addfoto {
-                width: 386px;
-                height: 48px;
-                box-sizing: border-box;
-                border: 1px solid $black;
+            .stuff_btn {
+                border: 1px solid #000;
                 border-radius: 50px;
-                color: rgb(26, 26, 26);
+                width: 184px;
+                height: 48px;
+                color: #333;
                 font-family: $font-nunito;
                 font-size: 14px;
                 font-weight: 700;
-                line-height: 100%;
+                cursor: pointer;
                 background: transparent;
             }
         }
 
-        .modal_wrap2 {
-            p {
-                color: $text-9;
+        .stuff_table {
+            background-color: $white;
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+
+
+            .stuff_table_item {
+                width: 100%;
+                border-collapse: collapse;
                 font-family: $font-nunito;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 100%;
-                padding-bottom: 8px;
-            }
 
-
-            .modal_btn_wrap {
-                display: flex;
-                width: 386px;
-                height: 44px;
-                gap: 16px;
-
-                button {
-                    width: 185px;
-                    height: 44px;
-                    border-radius: 10px;
-                    border: none;
-                    width: 100%;
-                }
-
-                .modal_btn1 {
-                    color: $text-9;
+                th,
+                td {
+                    padding: 20px 60px ;
+                    text-align: center;
+                    border: 1px solid #eee;
+                    color: rgb(26, 26, 26);
                     font-family: $font-nunito;
-                    font-size: 12px;
-                    font-weight: 400;
+                    font-size: 18px;
+                    font-weight: 700;
                     line-height: 100%;
-                    background: transparent;
+                    
                 }
 
-                .modal_btn2 {
-                    color: $white;
-                    font-family: $font-nunito;
-                    font-size: 12px;
-                    font-weight: 400;
-                    line-height: 100%;
-                    background: $black;
+                th {
+                    color: #999;
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+
+                td {
+                    font-size: 14px;
+                    color: #333;
+                }
+
+                .status {
+                    padding: 4px 8px;
+                    border-radius: 6px;
+                    font-size: 13px;
+                    font-weight: 500;
+                    display: inline-block;
+
+                    &.available {
+                        background-color: #d4f8dd;
+                        color: #2e7d32;
+                    }
+
+                    &.absent {
+                        background-color: #ffe2dd;
+                        color: #d32f2f;
+                    }
+                }
+
+                .edit_btn {
+                    background: none;
+                    border: 1px solid #ccc;
+                    border-radius: 50%;
+                    padding: 6px;
+                    cursor: pointer;
+
+                    img {
+                        width: 18px;
+                        height: 18px;
+                    }
                 }
             }
+        }
+    }
 
-            .modal_input_wrap {
+
+ 
+}
+   .modal_overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal_content {
+        background: #fff;
+        border-radius: 16px;
+        padding: 26px;
+        width: 869px;
+        height: 723px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .modal_wrapper {
+            display: flex;
+            gap: 39px;
+            justify-content: space-between;
+
+            .modal_wrap1 {
                 display: flex;
                 flex-direction: column;
-                gap: 16px;
-                margin-top: 23px;
+                gap: 26px;
 
+                .modal_bg {
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 8px 3px rgba(149, 153, 171, 0.16);
+                    background: rgb(230, 230, 230);
+                    width: 386px;
+                    height: 258px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
-                label {
-                    color: $text-9;
+                    img {
+                        background-size: contain;
+                    }
+                }
+
+                .modal_addfoto {
+                    width: 386px;
+                    height: 48px;
+                    box-sizing: border-box;
+                    border: 1px solid $black;
+                    border-radius: 50px;
+                    color: rgb(26, 26, 26);
                     font-family: $font-nunito;
                     font-size: 14px;
                     font-weight: 700;
                     line-height: 100%;
+                    background: transparent;
                 }
+            }
 
-                input {
-                    width: 386px;
-                    height: 48px;
-                    border-radius: 12px;
-
-
-                    background: rgb(243, 243, 243);
+            .modal_wrap2 {
+                p {
                     color: $text-9;
                     font-family: $font-nunito;
                     font-size: 16px;
                     font-weight: 500;
                     line-height: 100%;
-                    border: none;
-                    outline: none;
-                    padding-left: 24px;
+                    padding-bottom: 8px;
                 }
 
-                .modal_inp_wrap1,
-                .modal_inp_wrap2,
-                .modal_inp_wrap3 {
+
+                .modal_btn_wrap {
+                    display: flex;
+                    width: 386px;
+                    height: 44px;
+                    gap: 16px;
+
+                    button {
+                        width: 185px;
+                        height: 44px;
+                        border-radius: 10px;
+                        border: none;
+                        width: 100%;
+                    }
+
+                    .modal_btn1 {
+                        color: $text-9;
+                        font-family: $font-nunito;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 100%;
+                        background: transparent;
+                    }
+
+                    .modal_btn2 {
+                        color: $white;
+                        font-family: $font-nunito;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 100%;
+                        background: $black;
+                    }
+                }
+
+                .modal_input_wrap {
                     display: flex;
                     flex-direction: column;
-                    gap: 8px;
+                    gap: 16px;
+                    margin-top: 23px;
+
+
+                    label {
+                        color: $text-9;
+                        font-family: $font-nunito;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 100%;
+                    }
+
+                    input {
+                        width: 386px;
+                        height: 48px;
+                        border-radius: 12px;
+                        text-align: start;
+                        background: rgb(243, 243, 243);
+                        color: $text-9;
+                        font-family: $font-nunito;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 100%;
+                        border: none;
+                        outline: none;
+                        padding-left: 24px;
+                    }
+
+                    .modal_inp_wrap1,
+                    .modal_inp_wrap2,
+                    .modal_inp_wrap3 {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                    }
                 }
             }
         }
@@ -263,6 +338,6 @@
             font-size: 14px;
             font-weight: 700;
             line-height: 100%;
+            background: transparent;
         }
     }
-}
