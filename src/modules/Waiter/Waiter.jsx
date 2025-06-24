@@ -3,17 +3,12 @@ import { MdEditDocument } from "react-icons/md";
 import { RiDeleteBinFill } from "react-icons/ri";
 import Header from "../../components/Header/Header";
 import Waiter_modal from "./Waiter_item/Waiter_modal"; // Убедись, что путь правильный
-import AOS from "aos";
-import "aos/dist/aos.css";
 import "../../assets/scss/modules/_wait.scss";
 
 export default function Waiter() {
   const [modalOpen, setModalOpen] = useState(false);
   const [deleteModalOpen, setDeleteModalOpen] = useState(false);
 
-  useEffect(() => {
-    AOS.init({ once: true, duration: 800 });
-  }, []);
 
   return (
     <>
