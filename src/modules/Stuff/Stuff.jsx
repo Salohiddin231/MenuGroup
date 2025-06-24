@@ -54,8 +54,7 @@ function StuffModal({ onClose }) {
             </div>
           </div>
           <div className="modal_btn_wrapper">
-            <button className="modal_btn1">Сохранить</button>
-            <button className="modal_btn2">Удалить товар</button>
+            <button className="modal_btn1">Добавить</button>
           </div>
         </div>
       </div>

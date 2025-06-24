@@ -35,9 +35,15 @@
 
                 th,
                 td {
-                    padding: 31px 80px ;
+                    padding: 20px 60px ;
                     text-align: center;
                     border: 1px solid #eee;
+                    color: rgb(26, 26, 26);
+                    font-family: $font-nunito;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 100%;
+                    
                 }
 
                 th {
@@ -215,8 +221,7 @@
                         width: 386px;
                         height: 48px;
                         border-radius: 12px;
-
-
+                        text-align: start;
                         background: rgb(243, 243, 243);
                         color: $text-9;
                         font-family: $font-nunito;
