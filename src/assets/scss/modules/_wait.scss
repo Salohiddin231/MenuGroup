@@ -82,7 +82,7 @@
 
 }
 
-.modal_overlay {
+.modal_overlay2 {
     position: fixed;
     top: 0;
     left: 0;
@@ -92,22 +92,113 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.modal_content {
-    background: white;
-    border-radius: 20px;
-    padding: 40px;
-    width: 720px;
-   
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    .modal_content2 {
+        background: white;
+        border-radius: 20px;
+        padding: 40px;
+        width: 720px;
+
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 
 
-    &.big {
-        display: flex;
-        flex-direction: column;
+        &.big {
+            display: flex;
+            flex-direction: column;
+        }
     }
+
+    .modal_form2 {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        margin-bottom: 30px;
+
+        .form_column {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+
+            label {
+                font-size: 14px;
+                margin-bottom: 5px;
+                color: #333;
+            }
+
+            input {
+                padding: 10px 15px;
+                border: none;
+                background: #f3f3f3;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                font-size: 14px;
+                color: #666;
+
+                &::placeholder {
+                    color: #aaa;
+                }
+
+                &:focus {
+                    outline: none;
+                    background-color: #eaeaea;
+                }
+            }
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 26px;
+            cursor: pointer;
+            color: #999;
+
+            &:hover {
+                color: #333;
+            }
+        }
+    }
+
+    .modal_buttons.bottom {
+        display: flex;
+        justify-content: space-between;
+
+        .btn_save {
+            flex: 1;
+            background: #000;
+            color: #fff;
+            padding: 12px 0;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                background: #333;
+            }
+        }
+
+        .btn_delete {
+            flex: 1;
+            background: white;
+            color: red;
+            padding: 12px 0;
+            border: 1px solid red;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                background: #ffecec;
+            }
+        }
+    }
+
 }
+
 
 .modal_header {
     display: flex;
@@ -147,101 +238,15 @@
     }
 }
 
-.modal_form {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    margin-bottom: 30px;
 
-    .form_column {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
 
-        label {
-            font-size: 14px;
-            margin-bottom: 5px;
-            color: #333;
-        }
-
-        input {
-            padding: 10px 15px;
-            border: none;
-            background: #f3f3f3;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            font-size: 14px;
-            color: #666;
-
-            &::placeholder {
-                color: #aaa;
-            }
-
-            &:focus {
-                outline: none;
-                background-color: #eaeaea;
-            }
-        }
-    }
-
-    .close {
-        position: absolute;
-        top: 15px;
-        right: 20px;
-        font-size: 26px;
-        cursor: pointer;
-        color: #999;
-
-        &:hover {
-            color: #333;
-        }
-    }
-}
-
-.modal_buttons.bottom {
-    display: flex;
-    justify-content: space-between;
-
-    .btn_save {
-        flex: 1;
-        background: #000;
-        color: #fff;
-        padding: 12px 0;
-        border: none;
-        border-radius: 30px;
-        font-size: 16px;
-        margin-right: 10px;
-        cursor: pointer;
-        transition: 0.3s;
-
-        &:hover {
-            background: #333;
-        }
-    }
-
-    .btn_delete {
-        flex: 1;
-        background: white;
-        color: red;
-        padding: 12px 0;
-        border: 1px solid red;
-        border-radius: 30px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: 0.3s;
-
-        &:hover {
-            background: #ffecec;
-        }
-    }
-}
 
 
 
 
 
 // Подложка поверх всего экрана
-.delet_overlay {
+.delet_overlay2 {
     position: fixed;
     inset: 0; // shorthand для top/right/bottom/left = 0
     background: rgba(0, 0, 0, 0.4);
@@ -249,69 +254,69 @@
     align-items: center;
     justify-content: center;
     z-index: 1000;
-}
 
-// Собственно окно «Удалить»
-.delet_modal {
-    background: #ffffff;
-    border-radius: 20px;
-    padding: 30px 40px;
-    width: 500px;
-    max-width: 90%;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
+    // Собственно окно «Удалить»
+    .delet_modal {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 30px 40px;
+        width: 500px;
+        max-width: 90%;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
 
-// Заголовок-подтверждение
-.delet_title {
-    font-family: Nunito, sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    color: #333333;
-    margin-bottom: 24px;
-    line-height: 1.4;
-}
+    // Заголовок-подтверждение
+    .delet_title {
+        font-family: Nunito, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: #333333;
+        margin-bottom: 24px;
+        line-height: 1.4;
+    }
 
-// Группа кнопок
-.delet_group {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
+    // Группа кнопок
+    .delet_group {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
 
-// Кнопка «Отменить»
-.delet_otmen {
-    background: #000000;
-    color: #ffffff;
-    border: none;
-    padding: 12px 40px;
-    border-radius: 30px;
-    font-family: Nunito, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background 0.2s;
-}
+    // Кнопка «Отменить»
+    .delet_otmen {
+        background: #000000;
+        color: #ffffff;
+        border: none;
+        padding: 12px 40px;
+        border-radius: 30px;
+        font-family: Nunito, sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
 
-.delet_otmen:hover {
-    background: #222222;
-}
+    .delet_otmen:hover {
+        background: #222222;
+    }
 
-// Кнопка «Подтвердить»
-.delet_podver {
-    background: none;
-    color: #ff4d4f;
-    border: 2px solid #ff4d4f;
-    padding: 12px 40px;
-    border-radius: 30px;
-    font-family: Nunito, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background 0.2s, color 0.2s;
-}
+    // Кнопка «Подтвердить»
+    .delet_podver {
+        background: none;
+        color: #ff4d4f;
+        border: 2px solid #ff4d4f;
+        padding: 12px 40px;
+        border-radius: 30px;
+        font-family: Nunito, sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s;
+    }
 
-.delet_podver:hover {
-    background: #ff4d4f;
-    color: #ffffff;
+    .delet_podver:hover {
+        background: #ff4d4f;
+        color: #ffffff;
+    }
 }

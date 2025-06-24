@@ -6,8 +6,8 @@ export default function Waiter_modal({ isOpen, onClose }) {
   const stopProp = (e) => e.stopPropagation();
 
   return (
-    <div className="modal_overlay" onClick={onClose}>
-      <div className="modal_content big" onClick={stopProp}>
+    <div className="modal_overlay2" onClick={onClose}>
+      <div className="modal_content2 big" onClick={stopProp}>
         <div className="modal_header">
           <div className="photo_upload">
             <div className="photo_circle"><FaUser className="user_icon" /></div>
@@ -15,7 +15,7 @@ export default function Waiter_modal({ isOpen, onClose }) {
           </div>
         </div>
 
-        <div className="modal_form">
+        <div className="modal_form2">
           <div className="form_column">
             <label>Имя</label>
             <input type="text" placeholder="Саша" />
