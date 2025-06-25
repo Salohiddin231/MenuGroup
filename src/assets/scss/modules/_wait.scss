@@ -3,8 +3,11 @@
     margin-top: 40px;
     font-family: Nunito;
 
-    .wait_add {
-        margin-left: 1011px;
+  .wait_btn{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+      .wait_add {
         box-sizing: border-box;
         border: 1px solid rgb(0, 0, 0);
         border-radius: 50px;
@@ -17,6 +20,7 @@
         width: 184px;
         height: 48px;
     }
+  }
 
     .wait_list {
         margin-top: 36px;
