@@ -55,7 +55,7 @@ export default function Sitebar({ isOpen, setIsOpen }) {
                 <li className="sitebar_pages">
                     <NavLink to="/table">
                         <span className="sitebar_icon_bg">
-                            {isOpen ? <p className='sitebar_icon_bg'><MdOutlineTableBar /> Официанты</p> : <MdOutlineTableBar />}
+                            {isOpen ? <p className='sitebar_icon_bg'><MdOutlineTableBar /> Столы</p> : <MdOutlineTableBar />}
                         </span>
                     </NavLink>
                 </li>
