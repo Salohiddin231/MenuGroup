@@ -18,7 +18,6 @@ export default function Waiter() {
         <button onClick={() => setModalOpen(true)} className="wait_add">
           + Добавить Официанта
         </button>
-        <button>Ali</button>
 
         <ul className="wait_list">
           <li className="wait_item">

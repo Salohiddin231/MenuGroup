@@ -245,17 +245,15 @@
 
 
 
-// Подложка поверх всего экрана
 .delet_overlay2 {
     position: fixed;
-    inset: 0; // shorthand для top/right/bottom/left = 0
+    inset: 0; 
     background: rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1000;
 
-    // Собственно окно «Удалить»
     .delet_modal {
         background: #ffffff;
         border-radius: 20px;
