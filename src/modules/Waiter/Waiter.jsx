@@ -46,7 +46,7 @@ export default function Waiter() {
       <Waiter_modal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
 
       {deleteModalOpen && (
-        <div className="delet_overlay" onClick={() => setDeleteModalOpen(false)}>
+        <div className="delet_overlay2" onClick={() => setDeleteModalOpen(false)}>
           <div className="delet_modal" onClick={(e) => e.stopPropagation()}>
             <p className="delet_title">
               Вы точно уверены, что хотите удалить учётную запись?
