@@ -9,12 +9,12 @@ export default function Waiter_modal({ isOpen, onClose }) {
     <div className="modal_overlay2" onClick={onClose}>
       <div className="modal_content2 big" onClick={stopProp}>
         <div className="modal_header">
-          <div className="photo_upload">
-            <div className="photo_circle"><FaUser className="user_icon" /></div>
-            <button className="photo_btn">Добавить фото</button>
-          </div>
         </div>
 
+        <div className="photo_upload">
+          <div className="photo_circle"><FaUser className="user_icon" /></div>
+          <button className="photo_btn">Добавить фото</button>
+        </div>
         <div className="modal_form2">
           <div className="form_column">
             <label>Имя</label>
