@@ -1,1 +1,99 @@
-// Пишите с новой ветки
+.table_btn {
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-bottom: 20px;
+
+    button {
+        width: 184px;
+        height: 48px;
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        color: rgb(26, 26, 26);
+        font-family: Nunito;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 100%;
+    }
+}
+
+.tab_table {
+    background-color: $white;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+
+    .table_item {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: $font-nunito;
+
+        th,
+        td {
+            padding: 20px 60px;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+
+        th {
+            color: #999;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        td {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .status {
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 500;
+            display: inline-block;
+
+            &.available {
+                background-color: #d4f8dd;
+                color: #2e7d32;
+            }
+        }
+    }
+}
+
+.icon_table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 92px;
+}
+
+.tab_iconnnn {
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 360px;
+    width: 46px;
+    height: 46px;
+} 
+
+.tab_icon {
+color: rgb(0, 0, 0);
+    width: 35px;
+    height: 25px;
+}
+
+.tab_iconnn_2 {
+    box-sizing: border-box;
+border: 1px solid rgb(230, 87, 28);
+border-radius: 360px;
+width: 46px;
+height: 46px;
+}
+
+.tab_icon_2{
+    color: rgb(230, 87, 28);
+    width: 35px;
+    height: 25px;
+}
