@@ -99,6 +99,7 @@ export default function Header({ text }) {
 
                         <div className="custom_dropdown">
                             <div className="dropdown_selected" onClick={toggleDropdown}>
+                                <CgProfile className="dropdown_icon_prof"/>
                                 {selected}
                                 <IoIosArrowDown className={`dropdown_icon ${isOpen ? "open" : ""}`} />
                             </div>
