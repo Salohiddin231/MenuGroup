@@ -80,13 +80,16 @@
 
 .dropdown_selected {
   padding: 10px;
-  border: 1px solid #ccc;
-  background: white;
+  width: 203px;
+  height: 48px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid rgb(245, 245, 245);
+  border-radius: 1000px;
+  background: rgb(255, 255, 255);
 }
 
 
@@ -116,6 +119,12 @@
   width: 24px;
   height: 24px;
 
+}
+
+.dropdown_icon_prof {
+  width: 40px;
+  height: 40px;
+  color: rgb(215, 215, 215);
 }
 
 .dropdown_list {
