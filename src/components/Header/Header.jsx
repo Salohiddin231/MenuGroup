@@ -2,6 +2,10 @@ import { useState, useEffect, useRef } from "react";
 import { CiSearch } from "react-icons/ci";
 import { MdKeyboardVoice } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
+import { CgProfile } from "react-icons/cg";
+import { RxExit } from "react-icons/rx";
+import { IoIosArrowForward } from "react-icons/io";
+
 
 export default function Header({ text }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -101,14 +105,19 @@ export default function Header({ text }) {
 
                             {isOpen && (
                                 <ul className="dropdown_list">
-                                    <li onClick={() => handleSelect("Менеджер Саша")}>
-                                        Менеджер Саша
+                                    <li onClick={() => handleSelect("Профиль")}>
+                                        <div className="dropdown_icon_s">
+                                            <CgProfile className="dropdown_icons dropdown_icon_s_prof" />
+                                            <p className="dropdown_icon_s_prof">Профиль</p>
+                                        </div>
+                                        <IoIosArrowForward className="dropdown_icons dropdown_icon_s_prof" />
                                     </li>
-                                    <li onClick={() => handleSelect("Менеджер Анна")}>
-                                        Менеджер Анна
-                                    </li>
-                                    <li onClick={() => handleSelect("Менеджер Алексей")}>
-                                        Менеджер Алексей
+                                    <li onClick={() => handleSelect("Выйти")}>
+                                        <div className="dropdown_icon_s">
+                                            <RxExit className="dropdown_icons dropdown_icon_s_exit" />
+                                            <p className="dropdown_icon_s_exit">Выйти</p>
+                                        </div>
+                                        <IoIosArrowForward className="dropdown_icons dropdown_icon_s_exit" />
                                     </li>
                                 </ul>
                             )}
