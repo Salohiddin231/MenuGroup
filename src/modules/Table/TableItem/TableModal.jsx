@@ -6,7 +6,6 @@ export default function TableModal({ isOpen, onClose }) {
 
   useEffect(() => {
     if (isOpen) {
-      // QR-code matni: bu yerda siz istagancha o‘zgartirishingiz mumkin
       QRCode.toDataURL('Стол №2 | Кабинка: VIP | Места: 5')
         .then(url => setQrCode(url))
         .catch(err => console.error(err));
